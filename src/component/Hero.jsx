@@ -31,7 +31,7 @@ function Hero() {
 
       <div
         ref={container}
-        className="bg-blue-50 min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-10 py-20 font-sans md:gap-12"
+        className="bg-white min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-10 py-20 font-sans md:gap-12"
       >
         {/* Left: Photo + LinkedIn below image */}
         <div className="flex flex-col items-center md:items-start">
