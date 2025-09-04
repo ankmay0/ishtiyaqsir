@@ -7,15 +7,15 @@ export default function Navbar() {
   const [active, setActive] = useState("Home"); // <-- Track active tab
 
   const menuItems = [
-    { name: "Home", link: "#" },
+    { name: "Home", link: "/" },
     { name: "Research", link: "#" },
-    { name: "Teaching", link: "#" },
+    { name: "Teaching", link: "/teaching" },
     { name: "Curriculum Vitae", link: "#" },
-    { name: "Youtube Videos", link: "#" },
+    { name: "Youtube Videos", link: "/youtube" },
   ];
 
   const otherItems = [
-    { name: "Some useful links", link: "#" },
+    { name: "Some useful links", link: "/SomeUsefulLinks" },
     { name: "Personal", link: "#" },
   ];
 
