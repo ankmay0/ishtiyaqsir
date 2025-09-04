@@ -4,7 +4,9 @@ import Navbar from "./component/navbar";
 import Biography from "./component/Biography"; 
 import Publication from "./component/Publication";
 import Experience from "./component/Experience";
+import AwardsAchievements from "./component/AwardsAchievements";
 import Hero from "./component/Hero";
+
  
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
       <Biography/>
       <Publication/>
       <Experience/>
+      <AwardsAchievements/>
       
     </div>
   );
