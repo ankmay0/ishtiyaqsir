@@ -1,27 +1,24 @@
 // App.js
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./component/navbar";
-import Home from "./pages/home";
-import Teaching from "./pages/teaching";
-import Youtube from "./pages/youtube";
-import SomeUsefulLinks from "./pages/SomeUsefulLinks"; 
+import Biography from "./component/Biography"; 
+import Publication from "./component/Publication";
+import Experience from "./component/Experience";
+import Hero from "./component/Hero";
+ 
 
 function App() {
   return (
-    <Router>
+    <div>
+      
       <Navbar />
-      <div className="p-6">
-        <Routes>
-          {/* Main long-scrollable homepage */}
-          <Route path="/" element={<Home />} />
-
-          {/* Separate pages */}
-          <Route path="/teaching" element={<Teaching />} />
-          <Route path="/youtube" element={<Youtube />} />
-          <Route path="/SomeUsefulLinks" element={<SomeUsefulLinks />} />
-        </Routes>
-      </div>
-    </Router>
+      {/* Other sections of your site */}
+      <Hero/>
+      <Biography/>
+      <Publication/>
+      <Experience/>
+      
+    </div>
   );
 }
 
