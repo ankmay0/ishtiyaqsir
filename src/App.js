@@ -1,13 +1,13 @@
-export default function App() {
+import Navbar from "./component/navbar";
 
+function App() {
   return (
-
-    <h1 className="text-xl font-bold underline">
-
-      Hello world!
-
-    </h1>
-
-  )
-
+    <div>
+      <Navbar />
+      {/* Other sections of your site */}
+      
+    </div>
+  );
 }
+
+export default App;
