@@ -5,7 +5,7 @@ import Biography from "./component/Biography";
 import Publication from "./component/Publication";
 import Experience from "./component/Experience";
 import AwardsAchievements from "./component/AwardsAchievements";
-import Hero from "./component/Hero";
+import Home from "./pages/home";
 import Teaching from "./pages/teaching.jsx";
 import Youtube from "./pages/youtube.jsx";
 import SomeUsefullLinks from "./pages/SomeUsefulLinks.jsx";
@@ -19,7 +19,7 @@ function App() {
       {/* Route configuration */}
       <Routes>
         {/* Home */}
-        <Route path="/" element={<Hero />} />
+        <Route path="/" element={<Home />} />
 
         {/* Sections */}
         <Route path="/biography" element={<Biography />} />
@@ -30,7 +30,7 @@ function App() {
         <Route path="/youtube" element={<Youtube />} />
         <Route path="/someusefulllinks" element={<SomeUsefullLinks />} />
         {/* 404 fallback */}
-        <Route path="*" element={<Hero />} />
+        {/* <Route path="*" element={<Hero />} /> */}
       </Routes>
     </Router>
   );
