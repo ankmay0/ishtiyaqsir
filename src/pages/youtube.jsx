@@ -1,3 +1,5 @@
+import Navbar from "../component/navbar/navbar";
+
 export default function Youtube() {
   const videos = [
     {
@@ -39,6 +41,10 @@ export default function Youtube() {
   ];
 
   return (
+    <>
+          <div className="fixed top-3 inset-x-0 z-50">
+            <Navbar />
+          </div>
     <div className="min-h-screen bg-gradient-to-b from-gray-50 via-gray-100 to-gray-50 px-6 py-12">
       <div className="space-y-16 max-w-7xl mx-auto">
         {videos.map((video) => (
@@ -77,5 +83,6 @@ export default function Youtube() {
         ))}
       </div>
     </div>
+    </>
   );
 }

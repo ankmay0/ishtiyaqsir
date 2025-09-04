@@ -8,11 +8,11 @@ export default function Navbar() {
   const [active, setActive] = useState("Home");
 
   const menuItems = [
-    { name: "Home", link: "#" },
-    { name: "Research", link: "#" },
-    { name: "Teaching", link: "#" },
-    { name: "Curriculum Vitae", link: "#" },
-    { name: "Youtube Videos", link: "#" },
+    { name: "Home", link: "/" },
+    { name: "Research", link: "/research" },
+    { name: "Teaching", link: "/teaching" },
+    { name: "Curriculum Vitae", link: "/cv" },
+    { name: "Youtube Videos", link: "/youtube" },
   ];
 
   const otherItems = [

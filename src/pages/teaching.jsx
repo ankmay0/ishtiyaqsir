@@ -1,3 +1,5 @@
+import Navbar from "../component/navbar/navbar";
+
 export default function Teaching() {
   const teachingPoints = [
     "I have been teaching undergraduate and postgraduate students for several years.",
@@ -9,6 +11,10 @@ export default function Teaching() {
   ];
 
   return (
+    <>
+          <div className="fixed top-3 inset-x-0 z-50">
+            <Navbar />
+          </div>
     <div className="flex justify-center min-h-screen bg-gray-50 px-6 pt-16">
       <div className="max-w-3xl w-full text-black">
         <div className="space-y-6">
@@ -21,5 +27,6 @@ export default function Teaching() {
         </div>
       </div>
     </div>
+    </>
   );
 }
