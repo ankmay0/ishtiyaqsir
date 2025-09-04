@@ -1,5 +1,7 @@
 import Navbar from "./component/navbar";
+import Biography from "./component/Biography"; 
 import Hero from "./component/Hero";
+ 
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       <Navbar />
       {/* Other sections of your site */}
       <Hero/>
+      <Biography/>
       
     </div>
   );
