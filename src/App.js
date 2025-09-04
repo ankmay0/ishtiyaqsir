@@ -5,6 +5,7 @@ import Biography from "./component/Biography";
 import Publication from "./component/Publication";
 import Experience from "./component/Experience";
 import AwardsAchievements from "./component/AwardsAchievements";
+
 import Hero from "./component/Hero";
 
  
@@ -20,6 +21,8 @@ function App() {
       <Publication/>
       <Experience/>
       <AwardsAchievements/>
+
+
       
     </div>
   );
