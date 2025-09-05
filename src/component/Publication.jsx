@@ -53,14 +53,17 @@ const conferences = [
 
 export default function Publications() {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-10 font-sans">
+    <section className="max-w-6xl mx-auto px-6 py-12 font-sans text-gray-800">
+      <h2 className=" top-24 font-semibold text-xl md:text-2xl text-black mb-4">
+        Papers Published/Accepted
+      </h2>
       <div className="flex flex-col md:flex-row items-start gap-8">
+        
         {/* Left banner */}
-        <div className="md:w-1/4 flex items-start ml-14">
-        <h2 className="sticky top-24 font-semibold text-xl md:text-2xl text-blue-900">
-            Papers Published/Accepted
-        </h2>
-        </div>
+
+        {/* <div className="md:w-1/4 flex items-start ml-14">
+
+        </div> */}
 
         {/* Right: publication cards, shifted right and with light blue lines */}
         <div className="md:w-4/5 w-full flex flex-col gap-8 md:ml-12 ml-0">
@@ -68,14 +71,14 @@ export default function Publications() {
           {publications.map((pub) => (
             <div
               key={pub.title}
-              className="border-b border-blue-200 pb-7 mb-2 last:border-b-0"
+              className="border-b border-blue-200 pb-2 mb-0 last:border-b-0"
             >
               <div className="flex justify-between items-center">
                 <a
                   href={pub.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-2xl font-semibold underline hover:text-blue-600 transition"
+                  className="text-xl font-semibold underline hover:text-blue-600 transition"
                 >
                   {pub.title}
                 </a>
@@ -89,7 +92,7 @@ export default function Publications() {
                   <FiExternalLink className="inline w-5 h-5" />
                 </a>
               </div>
-              <div className="text-base mt-1 font-medium">{pub.authors}</div>
+              <div className="text-xl mt-1 font-medium">{pub.authors}</div>
               <div className="mt-1 text-lg font-bold">
                 {pub.venue}
                 <span className="font-normal text-base"> · {pub.year}</span>
@@ -113,12 +116,12 @@ export default function Publications() {
                     href={conf.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-2xl font-semibold underline hover:text-blue-600 transition"
+                    className="text-xl font-semibold underline hover:text-blue-600 transition"
                   >
                     {conf.title}
                   </a>
                 ) : (
-                  <span className="text-2xl font-semibold">{conf.title}</span>
+                  <span className="text-xl font-semibold">{conf.title}</span>
                 )}
                 {conf.link && (
                   <a

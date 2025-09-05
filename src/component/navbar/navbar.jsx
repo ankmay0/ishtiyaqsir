@@ -11,7 +11,7 @@ export default function Navbar() {
     { name: "Home", link: "/" },
     { name: "Research", link: "/research" },
     { name: "Teaching", link: "/teaching" },
-    { name: "Curriculum Vitae", link: "/cv" },
+    { name: "Curriculum Vitae", link: "/CurriculumVitae" },
     { name: "Youtube Videos", link: "/youtube" },
   ];
 

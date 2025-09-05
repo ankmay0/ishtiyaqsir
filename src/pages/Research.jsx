@@ -1,10 +1,14 @@
 import React from "react";
+import Navbar from "../component/navbar/navbar";
 
 export default function Research() {
   return (
     <section className="max-w-7xl mx-auto px-6 py-12 font-sans text-black">
+            <div className="fixed top-3 inset-x-0 z-50 ">
+              <Navbar />
+            </div>
       {/* TOP LEVEL OVERVIEW */}
-      <div className="mb-8">
+      <div className="mb-8 mt-8">
         <p className="mb-5">
           In today's modern world, it is very important to transport information from one place to another place. Information networks are used to transport information and hence finding the capacity of information networks becomes extremely important.
         </p>

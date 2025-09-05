@@ -11,14 +11,12 @@ const awards = [
 
 export default function AwardsAchievements() {
   return (
-    <section className="max-w-7xl mx-auto py-12 px-6 font-sans text-black">
-      <div className="flex gap-8">
-        {/* Left Column: Title */}
-        <div className="w-1/4 ml-6">
-          <h3 className="text-2xl font-semibold border-b border-gray-300 pb-2">
+    <section className="max-w-6xl mx-auto px-6 py-12 font-sans text-gray-800">
+                        <h3 className="text-2xl font-semibold  pb-2">
             Awards & Achievements
           </h3>
-        </div>
+      <div className="flex gap-8">
+
 
         {/* Right Column: Awards List */}
         <div className="w-3/4">

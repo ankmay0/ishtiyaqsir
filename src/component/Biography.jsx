@@ -20,16 +20,15 @@ function Biography() {
 
   return (
     <section className="max-w-6xl mx-auto px-6 py-12 font-sans text-gray-800">
+      <h2 className=" top-24 font-semibold text-3xl md:text-3xl text-black">
+        Biography
+      </h2>
       <div className="flex flex-col md:flex-row gap-8">
-        {/* Left column: Title */}
-        <div className="md:w-1/4 flex items-start">
-          <h2 className="sticky top-24 font-semibold text-xl md:text-2xl text-blue-900">
-            Biography
-          </h2>
-        </div>
+
+
 
         {/* Right column: Content */}
-        <div className="md:w-3/4 text-justify leading-relaxed">
+        <div className=" text-justify leading-relaxed mt-5">
           <p>{initialText}</p>
           {!expanded ? (
             <button

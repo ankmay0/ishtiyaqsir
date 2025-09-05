@@ -9,6 +9,8 @@ import Home from "./pages/home";
 import Teaching from "./pages/teaching.jsx";
 import Youtube from "./pages/youtube.jsx";
 import SomeUsefullLinks from "./pages/SomeUsefulLinks.jsx";
+import Research from "./pages/Research.jsx";
+import CurriculumVitae from "./pages/CurriculumVitae.jsx";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path="/teaching" element={<Teaching />} />
         <Route path="/youtube" element={<Youtube />} />
         <Route path="/someusefulllinks" element={<SomeUsefullLinks />} />
+        <Route path="/research" element={<Research />} />
+        <Route path="/CurriculumVitae" element={<CurriculumVitae />} />
         {/* 404 fallback */}
         {/* <Route path="*" element={<Hero />} /> */}
       </Routes>
